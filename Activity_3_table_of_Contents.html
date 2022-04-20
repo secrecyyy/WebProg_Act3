@@ -4,40 +4,61 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Table of Student Profiles</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
 <style> 
+	:root {
+		--color-1: #F1EBE5;
+		--color-2: #BDB3A5;
+		--color-3: #423F32;
+		--color-4: #232224;
+	}
 	img {
-		background-color: #232224;
-		border-radius: 190px;
-
+		background-color: var(--color-4);
+		border-radius: 100vw;
+		width: 100%;
+		height: auto;
+	}
+	img:hover {
+		transform: scale(1.5);
 	}
 	.greetings {
-		color: #f1ebe5;
-		border-radius: 25px;
-		background-color: #423f32;
-		width: 630px;
-		align-content: center;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 500px;
+		position: relative;
+		margin: auto;
+		top: calc(-6.69vh + 25px); /* 60px */
+		color: var(--color-1);
+		border-radius: 1.3vw;
+		background-color: var(--color-3);
+		width: 53.65vw; /* calc((10.42vw +.52vw + 3*(190px + .52vw))*53.65vw) */
+		max-width: 1050px;
 	}
 	.main_title {
-		font-size: 72px;
-		height: 12px;
+		font-size: 4.27vw; /*72px or 50px */
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 26.42vw;
+		height: 0.63vw;
 	}
 	.section{
-		font-size: 28px;
+		font-size: 1.56vw; /* 1.46 */
 		font-family: 'Open Sans', sans-serif;
-		font-weight: 300px;
+		font-weight: 15.63vw;
+		padding-bottom: .52vw;
 	}
-	table {
-		background-color: #bdb3a5;
-		padding: 25px;
-		border-radius: 25px;
+	.table_div {
+		position: relative;
+		margin: auto;
+		background-color: var(--color-2);
+		border-radius: 1.3vw;
+		width: 53.65vw;
 	}
-</style>
-<body style="background-color:#f1ebe5;">
-	<div>
+	.student_pic {
+		padding: .52vw;
+	}
+
+
+	</style>
+<body style="background-color: var(--color-1);">
+	<div class="greetings_div">
 		<center>
 			<div class="greetings">
 				<p class="main_title">Get to Know Us!</p>
@@ -45,61 +66,62 @@
 			</div>
 		</center>
 	</div>
-	<div>
+	<div class="table_div">
 		<center>
-			<table>
+			<table class="actual_table">
 				<tr class="first_three">
-					<td id="student_1">
+					<td class="student_pic" id="student_1">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
-					<td id="student_2">
+					<td class="student_pic" id="student_2">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
-					<td id="student_3">
+					<td class="student_pic" id="student_3">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
 				</tr>
 				<tr class="second_three">
-					<td id="student_4">
+					<td class="student_pic" id="student_4">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
-					<td id="student_5">
+					<td class="student_pic" id="student_5">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
-					<td id="student_6">
+					<td class="student_pic" id="student_6">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
 				</tr>
 				<tr class="third_three">
-					<td id="student_7">
+					<td class="student_pic" id="student_7">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
-					<td id="student_8">
+					<td class="student_pic" id="student_8">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
-					<td id="student_9">
+					<td class="student_pic" id="student_9">
 						<a href="http://google.com">
 							<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
 						</a>
 					</td>
 				</tr>
 			</table>
+
 		</center>
 	</div>
 </body>

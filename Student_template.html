@@ -3,14 +3,246 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200&family=PT+Serif&family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<title>Student Profile</title>
+	<style>
+		:root{
+			--color-1: #F1EBE5; /* Lightest */
+			--color-2: #BDB3A5; /* Lighter */
+			--color-3: #423F32; /* Darker */
+			--color-4: #232224; /* Darkest */
+			--color-5: #F4E6D3; /* Additional Color */
+		}
+		body{
+			background-color: var(--color-1) ;
+		}
+		.heading_container{
+			margin: auto;
+		}
+		img.profile_picture {
+			transform: scale(1.25);
+			background-color: var(--color-4);
+			border-radius: 100vw;
+			width: 18.0952vw;/* 190px @ 1050px  */
+			height: auto;
+		}
+		#profile_pic{
+			margin: auto;
+			border-radius: 100vw;
+			float: left;
+			position: relative;
+			left: 19.0476vw; /* 200px @ 1050px  */
+			top: calc(8.0952vw - 1.9569vh); /* 85px @ 1533px */
+			z-index: 1;
+			
+		}
+		.name {
+			position: relative;
+			left: 3.8095vw; /* 40px @ 1050px */
+			font-family: 'Arvo', serif;
+			background-color: var(--color-3);
+			color: var(--color-5);
+			margin: auto;
+			width: 47.6190vw;/* 500px @ 1050px */
+			border-radius: 50px;
+			padding-top: 0.3262vh;/* 5px @ 1533px */
+			padding-bottom: 1.6308vh;/* 25px @ 1533px */
+			padding-right: 0.9524vw;/* 10px @ 1050px */
+			padding-left: 0.9524vw;/* 10px @ 1050px */
+		}
+		#first_name{
+			font-size: 2.3809vw;/* 25px @ 1050px */
+			width: 0px;/* 0px @ 1050px */
+			height: 9.5238vw;/* 100px @ 1050px */
+		}
+		#remainder_name h1{
+			font-size: 3.333vw;/* 35px @ 1050px */
+			width: 0px;/* 0px @ 1050px */
+			height: 1.9048vw;/* 20px @ 1050px */
+		}
+		#section{
+
+		}
+		#first_name, #remainder_name, #section {
+			position: relative;
+			left: 14.2857vw;/* 150px @ 1050px */
+		}
+		hr.first{
+			margin-top: 2.6093vh;/* 40px @ 1533px */
+			width: 33.3333vw;/* 350px @ 1050px */
+			position: relative;
+			left: 7.1429vw;/* 75px @ 1050px */
+		}
+		hr.second{
+			margin: auto;
+			width: 23.8095vw;/* 250px @ 1050px */
+			position: relative;
+			left: 7.1429vw;/* 75px @ 1050px */
+		}
+		#section {
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.1429vw;/* 12px @ 1050px */
+			margin: auto;
+			position: relative;
+			width: 23.8095vw;/* 250px @ 1050px */
+			left: 13.3333vw;/* 140px @ 1050px */
+		}
+		#info_details {
+			color: var(--color-3);
+			font-family: 'Poppins', sans-serif;
+		}
+		#info_title {
+			font-family: 'PT Serif', serif;
+			font-size: 25px;
+			color: var(--color-4);
+			height: 35px;
+			border-bottom: 2px solid var(--color-4);
+		}
+		.add_info {
+			margin-top: auto;
+			text-align: justify;
+			
+		}
+		.left_part {
+			flex: left;
+			width: 40%;
+			padding-left: 2.5%;
+			padding-right: 2.5%;
+			border-right: 1px solid var(--color-4);
+		
+		}
+		.right_part {
+			flex: right;
+			width: 40%;
+			padding-left: 2.5%;
+			padding-right: 2.5%;
+			border-left: 1px solid var(--color-4)
+		}
+		.details_container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#contact {
+			margin: auto;
+		}
+		.gallery{
+			margin: auto;
+		}
+		b {
+			color: var(--color-4);
+		}
+
+	</style>
 </head>
 <body>
-	<div>
-		<center>
-			<p><b>Profile Photo</b></p>
-			<img src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/2x2_190p.png">
-		</center>
+	<div class="heading_container">
+		<div id="profile_pic">
+			<img class="profile_picture" src="https://raw.githubusercontent.com/secrecyyy/WebProg_Act3/main/Student_pictures/Student_1/Dizon%2C%20William%20Wallace%20B..png">
+		</div>
+		<div class="name" id="name_container">
+			<div id="first_name">
+				<h1>William Wallace</h1>
+			</div>
+			<div id="remainder_name">
+				<h1>Baluyut</h1>
+				<h1>Dizon</h1>
+			</div>
+			<hr class="first">
+			<hr class="second">
+			<div id="section">
+				<h1>BSCpE - 2A</h1>
+			</div>
+		</div>
+	</div>
+	<div class="details_container">
+
+		<div class="left_part" id="about" >
+			<div id="info_title">
+				<h3>About Me</h3>
+			</div>
+			<div id="info_details">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit, nisl eget dignissim imperdiet, tortor orci cursus sapien, vitae consectetur dui nulla id ante. Nunc non faucibus lorem. Aenean blandit tincidunt nibh consequat faucibus. Fusce quis tortor mauris. Pellentesque fringilla, nulla at elementum dapibus, eros diam facilisis risus, sed tristique nunc ligula viverra dui. Pellentesque dignissim quis augue blandit lobortis. Suspendisse odio leo, vestibulum non lectus eu, finibus pellentesque nisi.</p>
+			</div>
+		</div>
+		<div class="right_part" id="subjects">
+			<div id="info_title">
+				<h3>Subjects Enrolled</h3>
+			</div>
+			<div id="info_details">
+				<p><b>S.Y. 2021 - 2022</b>
+					<ul>
+						<li>CpEM 223 - Numerical Methods</li>
+						<li>CpE 224 - Software Design</li>
+						<li>AEC 224 - Fundamentals of Electronic Circuits</li>
+						<li>WEB 224 - Web Programming</li>
+						<li>CSS 113 - Computer System Servicing</li>
+						<li>CpE 223 - Basic Occupational Health and Safety</li>
+						<li>PE 222 - Physical Education 4</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div class="left_part" id="personal_info">
+			<div id="info_title">
+				<h3>Personal Info</h3>
+			</div>
+			<div id="info_details">
+				<dl>
+					<dt><b>Date of birth</b></dt>
+					<dd>1500 BC | Nakitang pinako si hesus</dd>
+					<dt><b>Age</b></dt>
+					<dd>Hulaan mo</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="right_part" id="educ_bg">
+			<div id="info_title">
+				<h3>Educational background</h3>
+			</div>
+			<div id="info_details">
+				<dl>
+					<dt><b>Senior High School</b></dt>
+					<dd>Pampanga High School: STEM</dd>
+					<dt><b>Junior High School</b></dt>
+					<dd>Pampanga High School</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="contact">
+			<div id="info_title">
+				<h3>Contact</h3>
+			</div>
+			<div id="info_details">
+				<div>
+					[Image here] insert@gmail.com
+				</div>
+				<div>
+					[Image here] 1234-123-1234
+				</div>
+				<div>
+					[Image here] Bermuda Triangle
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gallery">
+		<div id="info_title">
+			<h3>Gallery</h3>
+		</div>
+		<div id="info_details">
+			<img src="">
+			[Image here]
+			<img src="">
+			[Image here]
+			<img src="">
+			[Image here]
+			<img src="">
+			[Image here]
+			<img src="">
+			[Image here]
+			<img src="">
+			[Image here]
+		</div>
 	</div>
 </body>
 </html>
